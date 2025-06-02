@@ -7,9 +7,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - id: foo
-        uses: sonalman/learning-github-actions/hello-world-composite-action@SHA
+        uses: ./.github/actions/hello-world-composite-action
         with:
-          who-to-greet: 'Mona the Octocat'
+          who-to-greet: 'db devops cohort'
       - run: echo random-number "$RANDOM_NUMBER"
         shell: bash
         env:
